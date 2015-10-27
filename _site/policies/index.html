@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>
+      
+        Certificate Policies - FICAM Architecture
+      
+    </title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/ficam_architecture/assets/css/normalize.css">
+    <link rel="stylesheet" href="/ficam_architecture/assets/css/main.css">
+    <link rel="stylesheet" href="/ficam_architecture/assets/css/syntax.css">
+
+	<script src="/ficam_architecture/assets/js/jquery-1.11.2.min.js"></script>
+	<script src="/ficam_architecture/assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="/ficam_architecture/assets/js/accordion.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="/ficam_architecture/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+      <header role="banner">
+        <div class="wrap">
+          
+          <h1 class="site-title"><a class="title-link" href="/ficam_architecture/">FICAM Architecture</a></h1>
+        </div>
+      </header>
+
+      <div class="wrap content">
+
+        <aside>
+  <p class="intro"></p>
+  <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+      
+        <li class="group ">
+          <a href="/ficam_architecture/index.html"  
+            title="Introduction">Introduction</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/overview"  
+            title="Overview">Overview</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/architecture"  
+            title="Architecture">Architecture</a>
+			
+      
+        <li class="group sidebar-nav-active">
+          <a href="/ficam_architecture/policies"  
+            title="Current Page
+                  ">Certificate Policies</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/cas"  
+            title="Certificate Authorities">Certificate Authorities</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/crls"  
+            title="CRLs and Certificates">CRLs and Certificates</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/tools"  
+            title="Useful Tools">Useful Tools</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/devconfig/index/"  
+            title="Developer Guides">Developer Guides</a>
+			
+            <button class="expand-subnav"
+                    aria-expanded="false"
+                    aria-controls="nav-collapsible-8">+</button>
+          
+            <ul class="nav-children" id="nav-collapsible-8" 
+                aria-hidden="true">
+              
+				<li class="">
+                  <a href="/ficam_architecture/devconfig/index/"
+                    title="Introduction">Introduction</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/devconfig/sample1/"
+                    title="Dev Sample 1">Dev Sample 1</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/devconfig/sample2/"
+                    title="Dev Sample 2">Dev Sample 2</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/devconfig/sample3/"
+                    title="Dev Sample 3">Dev Sample 3</a>
+                </li>
+              
+            </ul>
+        
+      
+        <li class="group ">
+          <a href="/ficam_architecture/userconfig/index/"  
+            title="User Guides">User Guides</a>
+			
+            <button class="expand-subnav"
+                    aria-expanded="false"
+                    aria-controls="nav-collapsible-9">+</button>
+          
+            <ul class="nav-children" id="nav-collapsible-9" 
+                aria-hidden="true">
+              
+				<li class="">
+                  <a href="/ficam_architecture/userconfig/index/"
+                    title="Introduction">Introduction</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/userconfig/sample1/"
+                    title="Sample 1">Sample 1</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/userconfig/sample2/"
+                    title="Sample 2">Sample 2</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/userconfig/sample3/"
+                    title="Sample 3">Sample 3</a>
+                </li>
+              
+            </ul>
+        
+      
+    </ul>
+  </nav>
+</aside>
+
+
+        <section id="main" class="main-content" role="main">
+          <h2 class="page-title">Certificate Policies</h2>
+
+<h3 id="what-is-a-certificate-policy">What is a Certificate Policy?</h3>
+
+<p>The certificate policy specifies the the security requirement, issuance procedure and protection of the private key associated with a certificate.  Certificate policies are identified in a certificate by including one or more Object Identifiers (OIDs).  </p>
+
+<blockquote>
+  <p>A Certificate Policy (CP) is defined in the Internet X.509 Public Key Infrastructure Certificate Policy and Certification Practices Framework as “a named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements”.</p>
+</blockquote>
+
+<p>When a Certification Authority (CA) issues a certificate, it is providing a statement to a certificate user that a public key is bound to an <em>entity</em>.</p>
+
+<blockquote>
+  <p><em>Entity</em> can be a person, device, website, or organization</p>
+</blockquote>
+
+<p>The Certificate Policy provides the information that can be used by a certificate user to decide whether or not to trust a certificate.</p>
+
+<h3 id="why-do-we-use-certificate-policies">Why do we use Certificate Policies?</h3>
+<p>Certificate policies are used to establish trust relationships between Certificate Authorities.  This is called <em>cross-certification</em>. When CAs issue cross certificates, one CA assesses and recognizes one or more certificate polices of the other CA.</p>
+
+<h3 id="what-are-the-certificate-policies">What are the Certificate Policies?</h3>
+<p>The Federal PKI has twenty-five (25) certificate policies for people and non-person entity (NPE) certificates.   </p>
+
+<ul>
+  <li>Twelve (12) of the certificate policies are used only within the Federal Bridge Certificate Authority to map organizational policies across the issuing CAs and Bridges.</li>
+  <li>Thirteen (13) certificate policies are used for the final end entity certificates.</li>
+</ul>
+
+<p>All certificate policies denote a US Government issued and authorized certificate.<br />
+The Commercial Best Practices (CBP) identifier on certificate policies indicate the trusted roles or individuals assigned a role in certificate issuance do not have to be U.S. citizens.<br />
+A hardware (HW) identifier indicate the private key is generated and protected on a hardware based token.<br />
+The risk level referenced refers to the level of risk associated with transactions accepting certificates
+issued under the specified certificate policy.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Certificate Policy</th>
+      <th>Policy Object Identifier (OID)</th>
+      <th>Risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>common-policy</td>
+      <td>2.16.840.1.101.3.2.1.3.6</td>
+      <td>Medium risk – authentication, signature or encryption of USG individual person, group, device, or role.</td>
+    </tr>
+    <tr>
+      <td>common-HW</td>
+      <td>2.16.840.1.101.3.2.1.3.7</td>
+      <td>High risk – authentication, signature or encryption of USG individual person, group, role, or device where private key is protected on hardware token.</td>
+    </tr>
+    <tr>
+      <td>common-devices</td>
+      <td>2.16.840.1.101.3.2.1.3.8</td>
+      <td>Medium risk – USG authentication or encryption of device.</td>
+    </tr>
+    <tr>
+      <td>common-devicesHW</td>
+      <td>2.16.840.1.101.3.2.1.3.36</td>
+      <td>Medium risk - authentication or encryption of USG device where private key protected on hardware token.</td>
+    </tr>
+    <tr>
+      <td>common-auth</td>
+      <td>2.16.840.1.101.3.2.1.3.13</td>
+      <td>High risk - Shows possession of PIV card with PIN use</td>
+    </tr>
+    <tr>
+      <td>common-high</td>
+      <td>2.16.840.1.101.3.2.1.3.16</td>
+      <td>High risk – authentication, signature or encryption of USG individual person, group, role, or device where private key is protected on hardware token.</td>
+    </tr>
+    <tr>
+      <td>common-cardAuth</td>
+      <td>2.16.840.1.101.3.2.1.3.17</td>
+      <td>Shows possession of PIV card w/o PIN use.</td>
+    </tr>
+    <tr>
+      <td>common-piv-contentSigning</td>
+      <td>2. 16.840.1.101.3.2.1.3.39</td>
+      <td>Signs security objects on PIV or Derived PIV.</td>
+    </tr>
+    <tr>
+      <td>SHA1-mediumCBP</td>
+      <td>2.16.840.1.101.3.2.1.3.21</td>
+      <td>Medium risk – authentication, signature or encryption of individual person, group, device, or role. (SHA1)</td>
+    </tr>
+    <tr>
+      <td>SHA1-mediumHW-CBP</td>
+      <td>2.16.840.1.101.3.2.1.3.22</td>
+      <td>Medium risk – authentication, signature or encryption of individual person, group, or role where private key is protected on hardware token. (SHA1)</td>
+    </tr>
+    <tr>
+      <td>SHA1-medium</td>
+      <td>2.16.840.1.101.3.2.1.3.23</td>
+      <td>Medium risk – authentication, signature or encryption of individual person, group, device, or role. (SHA1)</td>
+    </tr>
+    <tr>
+      <td>SHA1-mediumHW</td>
+      <td>2.16.840.1.101.3.2.1.3.24</td>
+      <td>Medium risk – authentication, signature or encryption of individual person, group, or role where private key is protected on hardware token. (SHA1)</td>
+    </tr>
+    <tr>
+      <td>SHA1-devices</td>
+      <td>2.16.840.1.101.3.2.1.3.25</td>
+      <td>Medium risk - authentication or encryption of device .(SHA1)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Certificate Policy</th>
+      <th>Policy Object Identifier (OID)</th>
+      <th>Risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FBCA-rudimentary</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="how-do-i-view-the-certificate-policy">How do I view the Certificate Policy?</h3>
+
+
+        </section>
+
+      </div><!-- /.wrap content -->
+
+      <footer role="contentinfo">
+        <div class="wrap">
+          <p>This project is maintained by <a href="">LaChelle</a>.</p>
+
+          <p>Hosted on <a href="http://pages.github.com/">GitHub Pages</a>.</p>
+        </div><!--/.wrap -->
+      </footer>
+    </div> <!-- /.container -->
+    </body>
+</html>

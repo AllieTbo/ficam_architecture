@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>
+      
+        FPKI Certificate Authorities - FICAM Architecture
+      
+    </title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/ficam_architecture/assets/css/normalize.css">
+    <link rel="stylesheet" href="/ficam_architecture/assets/css/main.css">
+    <link rel="stylesheet" href="/ficam_architecture/assets/css/syntax.css">
+
+	<script src="/ficam_architecture/assets/js/jquery-1.11.2.min.js"></script>
+	<script src="/ficam_architecture/assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="/ficam_architecture/assets/js/accordion.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="/ficam_architecture/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+      <header role="banner">
+        <div class="wrap">
+          
+          <h1 class="site-title"><a class="title-link" href="/ficam_architecture/">FICAM Architecture</a></h1>
+        </div>
+      </header>
+
+      <div class="wrap content">
+
+        <aside>
+  <p class="intro"></p>
+  <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+      
+        <li class="group ">
+          <a href="/ficam_architecture/index.html"  
+            title="Introduction">Introduction</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/overview"  
+            title="Overview">Overview</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/architecture"  
+            title="Architecture">Architecture</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/policies"  
+            title="Certificate Policies">Certificate Policies</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/cas"  
+            title="Certificate Authorities">Certificate Authorities</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/crls"  
+            title="CRLs and Certificates">CRLs and Certificates</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/tools"  
+            title="Useful Tools">Useful Tools</a>
+			
+      
+        <li class="group ">
+          <a href="/ficam_architecture/devconfig/index/"  
+            title="Developer Guides">Developer Guides</a>
+			
+            <button class="expand-subnav"
+                    aria-expanded="false"
+                    aria-controls="nav-collapsible-8">+</button>
+          
+            <ul class="nav-children" id="nav-collapsible-8" 
+                aria-hidden="true">
+              
+				<li class="">
+                  <a href="/ficam_architecture/devconfig/index/"
+                    title="Introduction">Introduction</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/devconfig/sample1/"
+                    title="Dev Sample 1">Dev Sample 1</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/devconfig/sample2/"
+                    title="Dev Sample 2">Dev Sample 2</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/devconfig/sample3/"
+                    title="Dev Sample 3">Dev Sample 3</a>
+                </li>
+              
+            </ul>
+        
+      
+        <li class="group ">
+          <a href="/ficam_architecture/userconfig/index/"  
+            title="User Guides">User Guides</a>
+			
+            <button class="expand-subnav"
+                    aria-expanded="false"
+                    aria-controls="nav-collapsible-9">+</button>
+          
+            <ul class="nav-children" id="nav-collapsible-9" 
+                aria-hidden="true">
+              
+				<li class="">
+                  <a href="/ficam_architecture/userconfig/index/"
+                    title="Introduction">Introduction</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/userconfig/sample1/"
+                    title="Sample 1">Sample 1</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/userconfig/sample2/"
+                    title="Sample 2">Sample 2</a>
+                </li>
+              
+				<li class="">
+                  <a href="/ficam_architecture/userconfig/sample3/"
+                    title="Sample 3">Sample 3</a>
+                </li>
+              
+            </ul>
+        
+      
+    </ul>
+  </nav>
+</aside>
+
+
+        <section id="main" class="main-content" role="main">
+          <h2 class="page-title">FPKI Certificate Authorities</h2>
+
+<h4 id="common-policy-framework">Common Policy Framework</h4>
+<ul>
+  <li><a href="http://www.idmanagement.gov/sites/default/files/documents/FCPCA%20CP%20v1%2024.pdf&quot;" title="Download the federal Common Policy Certificate Policy">Certificate Policy</a></li>
+</ul>
+
+<h4 id="federal-bridge-certification-authorities-fbca">Federal Bridge Certification Authorities (<em>FBCA</em>)</h4>
+<p>The Federal Bridge CA (FBCA) is the PKI Bridge that enables interoperability between different federal PKIs and between Federal and external PKIs both commercial and state, local, or foreign governments. The FBCA provides a means to map participating PKI
+certificate policies to validate to the Federal Common Policy Certificate Authority trust anchor.</p>
+
+<ul>
+  <li><a href="http://http.fpki.gov/bridge/fbca.crt" title="Download the FBCA Certificate"><em>FBCA</em> certificate</a>
+    <ul>
+      <li>SHA1 Thumbprint:</li>
+      <li>DN:</li>
+    </ul>
+  </li>
+  <li><a href="http://http.fpki.gov/bridge/fbca2013.crt" title="Download the FBCA 2013 Certificate"><em>FBCA 2013</em> certificate</a>
+    <ul>
+      <li>SHA1 Thumbprint:</li>
+      <li>DN:</li>
+    </ul>
+  </li>
+  <li><a href="http://www.idmanagement.gov/sites/default/files/documents/FBCA%20Certificate%20Policy%20v2.27.pdf" title="Download the Federal Bridge Certificate Authority Certificate Policy">Certificate Policy</a></li>
+  <li><a href="http://www.idmanagement.gov/sites/default/files/documents/CPS%20FPKI%20v4-6%2020150615-Clean%20Final_v2_redacted.pdf" title="Download the Federal Bridge Certificate Authority Certificate Practices Statement">Certificate Practices Statement</a></li>
+</ul>
+
+<h4 id="sha-1-federal-root-certification-authority-sha1-frca">SHA-1 Federal Root Certification Authority (<em>SHA1 FRCA</em>)</h4>
+<p>The SHA1 Federal Root CA (SHA1 FRCA) is a federal CA supporting federal legacies
+that still require the deprecated SHA1 signature hash for certificates.</p>
+
+<ul>
+  <li><a href="http://http.fpki.gov/sha1frca/sha1frca.crt" title="Download the SHA-1 Federal Root Certificate">SHA-1 Federal Root certificate</a>
+    <ul>
+      <li>SHA1 Thumbprint: 80 7c 24 98 e9 0d 55 de 1b e0 e0 d3 c6 5f 16 1a 02 22 ab 71</li>
+      <li>DN: <em>cn=SHA-1 Federal Root CA, ou=FPKI, o=U.S. Government, c=US</em></li>
+    </ul>
+  </li>
+  <li><a href="">Certificate Practices Statement</a></li>
+</ul>
+
+<h4 id="egovernance-certification-authority-egovca">eGovernance Certification Authority (<em>eGOVCA</em>)</h4>
+<p>The E-Governance CA is an end entity issuing CA supporting government applications such as metadata signers, identity providers, service providers, and attribute authorities.</p>
+
+<ul>
+  <li><a href="http://http.fpki.gov/egov/egtsca.crt" title="Download the eGovernance Certificate"><em>eGov Trust</em> certificate</a>
+    <ul>
+      <li>SHA1 Thumbprint:</li>
+      <li>DN:</li>
+    </ul>
+  </li>
+  <li><a href="http://http.fpki.gov/egov/egtsca2014.crt" title="Download the eGovernance 2014 Certificate"><em>eGov Trust 2014</em> certificate</a>
+    <ul>
+      <li>SHA1 Thumbprint: af e7 bc 2b 2a 40 df cd 79 15 ce 26 4b 12 52 f3 0d f0 64 3f</li>
+      <li>DN: cn=eGovernance Trust Services CA-2014,ou=FPKI,o=U.S. Government,c=US</li>
+    </ul>
+  </li>
+  <li><a href="http://www.idmanagement.gov/sites/default/files/documents/CPS%20EGCA%20v4-6%2020150615-Clean%20Final_v2_redacted.pdf" title="View the eGovernance Certificate Authority Certificate Practices Statement">Certificate Practices Statement</a></li>
+</ul>
+
+
+        </section>
+
+      </div><!-- /.wrap content -->
+
+      <footer role="contentinfo">
+        <div class="wrap">
+          <p>This project is maintained by <a href="">LaChelle</a>.</p>
+
+          <p>Hosted on <a href="http://pages.github.com/">GitHub Pages</a>.</p>
+        </div><!--/.wrap -->
+      </footer>
+    </div> <!-- /.container -->
+    </body>
+</html>
